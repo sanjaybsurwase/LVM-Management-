@@ -1,0 +1,9 @@
+// Extend file system EXT4
+
+1. Expand the logical volume size
+
+#lvextend -L +2G /dev/vg_2/vol_dv
+
+2. Grow the file systemby running resise2fs command 
+
+#resize2fs  /dev/vg_2/vol_dv
